@@ -14,7 +14,7 @@ export default async (location,locationName) => {
     try {
       const response = await googleRoute.get('/',{
         params: {
-          key: "AIzaSyA7Dj7Uxfl6YWSMN8aVhgbEiYqF-hPiSD0",
+          key: "Enter Api Key",
           radius:2000,
           destination:location,
           origin: locationComp

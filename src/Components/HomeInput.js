@@ -3,7 +3,6 @@ import { StyleSheet,View} from "react-native";
 import {Input,Text} from 'react-native-elements'
 import googleApi from '../Api/google'
 import {Context as LocationContext} from '../Context/LocationContext'
-import apiKey from '../google_api_key'
 import _ from 'lodash'
 
 
@@ -24,7 +23,7 @@ const HomeInput = () => {
     try {
       const response = await googleApi.get('/',{
         params: {
-          key: "AIzaSyA7Dj7Uxfl6YWSMN8aVhgbEiYqF-hPiSD0",
+          key: "Input API KEY",
           radius:2000,
           input: dest,
           location:location
